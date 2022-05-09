@@ -7,7 +7,6 @@ const ctrl = require("./home.ctrl");
 
 // app.get(route(경로), callback function) 경로 설정
 router.get("/", ctrl.home);
-
 router.get("/login", ctrl.login);
 
 
