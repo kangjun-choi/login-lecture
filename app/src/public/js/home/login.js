@@ -1,4 +1,20 @@
 "use strict";
 
-console.log('hi');
-console.log('bye');
+// DOM -> Document Object Model(문서 객체 모델)
+// javascript에서 html에 존재하는 데이터를 가져와서 제어할 수 있음
+
+
+const id = document.querySelector("#id"),
+    password = document.querySelector("#password"),
+    loginBtn = document.querySelector("button");
+
+loginBtn.addEventListener("click", login);
+
+function login() {
+    const req = {
+        id: id.value,
+        password: password.value,
+    }
+
+    console.log(req);
+}
